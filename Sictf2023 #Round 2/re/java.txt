@@ -1,0 +1,231 @@
+public static void main(java.lang.String[]);
+Code:
+    0: bipush        37					//传参，长度37的数组
+    2: newarray       double			
+    4: dup					
+    5: iconst_0
+    6: ldc2_w        #2                  // double 148.0d
+    9: dastore
+    10: dup
+    11: iconst_1
+    12: ldc2_w        #4                  // double 136.0d
+    15: dastore
+    16: dup
+    17: iconst_2
+    18: ldc2_w        #6                  // double 151.0d
+    21: dastore
+    22: dup
+    23: iconst_3
+    24: ldc2_w        #8                  // double 234.0d
+    27: dastore
+    28: dup
+    29: iconst_4
+    30: ldc2_w        #10                 // double 177.0d
+    33: dastore
+    34: dup
+    35: iconst_5
+    36: ldc2_w        #12                 // double 48.0d
+    39: dastore
+    40: dup
+    41: bipush        6
+    43: ldc2_w        #14                 // double 226.0d
+    46: dastore
+    47: dup
+    48: bipush        7
+    50: ldc2_w        #8                  // double 234.0d
+    53: dastore
+    54: dup
+    55: bipush        8
+    57: ldc2_w        #16                 // double 214.0d
+    60: dastore
+    61: dup
+    62: bipush        9
+    64: ldc2_w        #10                 // double 177.0d
+    67: dastore
+    68: dup
+    69: bipush        10
+    71: ldc2_w        #18                 // double 168.0d
+    74: dastore
+    75: dup
+    76: bipush        11
+    78: ldc2_w        #20                 // double 176.0d
+    81: dastore
+    82: dup
+    83: bipush        12
+    85: ldc2_w        #6                  // double 151.0d
+    88: dastore
+    89: dup
+    90: bipush        13
+    92: ldc2_w        #22                 // double 250.0d
+    95: dastore
+    96: dup
+    97: bipush        14
+    99: ldc2_w        #24                 // double 19.0d
+    102: dastore
+    103: dup
+    104: bipush        15
+    106: ldc2_w        #26                 // double 20.0d
+    109: dastore
+    110: dup
+    111: bipush        16
+    113: ldc2_w        #28                 // double 253.0d
+    116: dastore
+    117: dup
+    118: bipush        17
+    120: ldc2_w        #30                 // double 52.0d
+    123: dastore
+    124: dup
+    125: bipush        18
+    127: ldc2_w        #32                 // double 72.0d
+    130: dastore
+    131: dup
+    132: bipush        19
+    134: ldc2_w        #20                 // double 176.0d
+    137: dastore
+    138: dup
+    139: bipush        20
+    141: ldc2_w        #34                 // double 170.0d
+    144: dastore
+    145: dup
+    146: bipush        21
+    148: ldc2_w        #36                 // double 140.0d
+    151: dastore
+    152: dup
+    153: bipush        22
+    155: ldc2_w        #20                 // double 176.0d
+    158: dastore
+    159: dup
+    160: bipush        23
+    162: ldc2_w        #38                 // double 236.0d
+    165: dastore
+    166: dup
+    167: bipush        24
+    169: ldc2_w        #40                 // double 54.0d
+    172: dastore
+    173: dup
+    174: bipush        25
+    176: ldc2_w        #42                 // double 231.0d
+    179: dastore
+    180: dup
+    181: bipush        26
+    183: ldc2_w        #44                 // double 212.0d
+    186: dastore
+    187: dup
+    188: bipush        27
+    190: ldc2_w        #46                 // double 237.0d
+    193: dastore
+    194: dup
+    195: bipush        28
+    197: ldc2_w        #48                 // double 135.0d
+    200: dastore
+    201: dup
+    202: bipush        29
+    204: ldc2_w        #6                  // double 151.0d
+    207: dastore
+    208: dup
+    209: bipush        30
+    211: ldc2_w        #50                 // double 150.0d
+    214: dastore
+    215: dup
+    216: bipush        31
+    218: ldc2_w        #48                 // double 135.0d
+    221: dastore
+    222: dup
+    223: bipush        32
+    225: ldc2_w        #52                 // double 217.0d
+    228: dastore
+    229: dup
+    230: bipush        33
+    232: ldc2_w        #42                 // double 231.0d
+    235: dastore
+    236: dup
+    237: bipush        34
+    239: ldc2_w        #54                 // double 229.0d
+    242: dastore
+    243: dup
+    244: bipush        35
+    246: ldc2_w        #56                 // double 32.0d
+    249: dastore
+    250: dup
+    251: bipush        36
+    253: ldc2_w        #58                 // double 90.0d
+    256: dastore
+    257: astore_3					//弹出栈顶(数组引用)到变量表第三个位置中
+    258: aload_3					//将局部变量表3 压入栈顶
+    259: arraylength				//弹出引用 将引用长度存储栈顶
+    260: newarray       double		// 创建一个和上面长度相同的数组
+    262: astore        4			
+    264: ldc           #60                 // String SICTF2023
+    266: astore_1					//变量表id 1
+    267: new           #61                 // class java/util/Scanner
+    270: dup
+    271: getstatic     #62                 // Field java/lang/System.in:Ljava/io/InputStream;
+    274: invokespecial #63                 // Method java/util/Scanner."<init>":(Ljava/io/InputStream;)V
+    277: astore        5
+    279: getstatic     #64                 // Field java/lang/System.out:Ljava/io/PrintStream;
+    282: ldc           #65                 // String 请输入flag:
+    284: invokevirtual #66                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+    287: aload         5
+    289: invokevirtual #67                 // Method java/util/Scanner.nextLine:()Ljava/lang/String;
+    292: astore_2
+    293: aload_2	//局部变量表id2的加载到栈顶
+    294: invokevirtual #68                 // Method java/lang/String.toCharArray:()[C
+    297: astore        6
+    299: aload_2
+    300: invokevirtual #69                 // Method java/lang/String.length:()I
+    303: bipush        38
+    305: if_icmpeq     319
+    308: getstatic     #64                 // Field java/lang/System.out:Ljava/io/PrintStream;
+    311: ldc           #70                 // String flag length error\n
+    313: invokevirtual #66                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+    316: goto          408
+    319: iconst_0
+    320: istore        7
+    322: iload         7
+    324: aload         6
+    326: arraylength
+    327: iconst_1
+    328: isub
+    329: if_icmpge     380
+    332: aload_1
+    333: iload         7
+    335: aload_1
+    336: invokevirtual #69                 // Method java/lang/String.length:()I
+    339: irem
+    340: invokevirtual #71                 // Method java/lang/String.charAt:(I)C
+    343: istore        8
+    345: aload         4
+    347: iload         7
+    349: aload         6
+    351: iload         7
+    353: caload
+    354: aload         6
+    356: iload         7
+    358: iconst_1
+    359: iadd
+    360: caload
+    361: ixor
+    362: iload         8
+    364: isub
+    365: iload         8
+    367: ixor
+    368: sipush        255
+    371: iand
+    372: i2d
+    373: dastore
+    374: iinc          7, 1
+    377: goto          322
+    380: aload         4
+    382: aload_3
+    383: invokestatic  #72                 // Method java/util/Arrays.equals:([D[D)Z
+    386: ifeq          400
+    389: getstatic     #64                 // Field java/lang/System.out:Ljava/io/PrintStream;
+    392: ldc           #73                 // String OH!You are right!\n
+    394: invokevirtual #66                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+    397: goto          408
+    400: getstatic     #64                 // Field java/lang/System.out:Ljava/io/PrintStream;
+    403: ldc           #74                 // String NO!You should try again!\n
+    405: invokevirtual #66                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+    408: iconst_0
+    409: invokestatic  #75                 // Method java/lang/System.exit:(I)V
+    412: return
