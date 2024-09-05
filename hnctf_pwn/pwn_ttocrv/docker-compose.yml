@@ -1,0 +1,6 @@
+version: "2"
+services:
+  hnctf_2024_pwn_ttocrv:
+    build: .
+    image: hnctf_2024_pwn_ttocrv
+    restart: unless-stopped
